@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+ 
+-->
+<!--
+  UUlm Style 
+
+  Author: Benjamin Erb
+
+  URL: https://github.com/berb/html5slides-uulm
+
+-->
+
+<html>
+
+<head>
+	<link href="lib/styles.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="lib/uulm/uulm.css" media="screen" rel="stylesheet" type="text/css" />
+	<meta charset='utf-8'>
+	<script src='lib/slides.js'></script>
+
+	<title>Open Data in Ulm</title>
+
+</head>
+
+<body style='display: none'>
+
+	<div class='slides layout-normal template-uulm-in'>
+		<!-- 
+			Your slides (<article>s) go here. You can group them using <section>s
+			Every slide must be part of a section. If a section contains a <header>,
+			its content will be used as TOC label. If you don't want to group your
+			slides, just put all of your <article>s in a single <section>.
+		-->
+
+		<section>
+			<article class='title-slide'>
+				<h1 id="title"><br/>Open Data in Ulm</h1>
+				<h2 id="author">
+					Benjamin Erb<br>14.02.2012
+				</h2>
+<!--
+				<h2 id="subtitle"></h2>
+-->				
+				<p>
+					<img id="title-header" src='assets/images/ulm_night1.jpg'> 
+					<img id="uulm-logo" src='lib/uulm/uulm_logo.svg'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Zur Person</h3>
+				<div style="width:80%">
+				<p></p>
+				<p>
+				<img src="assets/images/berb.png" style="border: 1px solid black; float:right; margin: 10px">
+				<span style="font-weight:bold;" class="med-color">Benjamin Erb</span><br/>
+				Student @ Uni Ulm<br/>
+				Medieninformatik
+				</p>
+				<p><span style="font-weight:bold;">Interessen:</span> Verteilte Systeme, Web-Technologien, skalierbare Architekturen, Mobile/Ubiquitous Computing und <strong>Open Data</strong></p>
+				<div style="clear:both;"></div>
+				<p><span style="font-weight:bold;">Kontakt:</span><br/>
+				www: <a href="http://www.benjamin-erb.de/">benjamin-erb.de</a> / <a href="http://www.ioexception.de/">ioexception.de</a><br/>
+				twitter: <a href="http://www.twitter.com/b_erb">@b_erb</a><br/>
+				g+: <a href="http://www.twitter.com/b_erb">b.erb.io/+</a><br/>
+				<br/>
+				</p>
+				</div>
+			</article>
+		</section>
+
+		<section>
+			<header>Open Data</header>
+			<article class="fill">
+				<h1>Open Data</h1>
+			</article>
+			
+			<article class="">
+				<h3>Open…</h3>
+				<ul>
+					<li>Source</li>
+					<li>Access</li>
+					<li>Content</li>
+					<li>Government</li>
+					<li class="in-color"><strong>Data</strong></li>
+					<li>…</li>
+				</ul>
+			</article>				
+
+			<article class="fill">
+				<h1>Open Data?</h1>
+			</article>
+			
+			<article class='fill'>
+				<h4>Informationsfreiheitsgesetz?</h4>
+				<img  src='assets/images/1427691715_438aa58bf9_b.jpg'>
+				<div class='source white'>Bild: <a href="http://www.flickr.com/photos/manc/1427691715">mrmanc</a> (cc-by-sa 2.0)</div>				
+			</article>				
+			
+			<article class="fill">
+				<q style="font-size:125%; line-height:145%">Offene Daten sind sämtliche Datenbestände, die im Interesse der Allgemeinheit der Gesellschaft ohne jedwede Einschränkung zur freien Nutzung, zur Weiterverbreitung und zur freien Weiterverwendung frei zugänglich gemacht werden.</q>
+					<div class='author'>von Lucke/Geiger</div>
+					<div class='source'>Quelle: <a href="http://www.zeppelin-university.de/deutsch/lehrstuehle/ticc/TICC-101203-OpenGovernmentData-V1.pdf">Open Government Data
+</a>, von Lucke</div>	
+			</article>	
+			
+			<article class="">
+				<h3>Open Data</h3>
+				<ul>
+					<li>öffentliches Interesse</li>
+					<li>freier Zugang</li>
+					<li>freie Formate</li>
+					<li>freie Lizenzen</li>
+				</ul>
+			</article>				
+			
+			<article class="">
+				<h3>Wieso Open Data?</h3>
+				<ul>
+					<li>viele Daten "gehören" den Menschen</li>
+					<li>viele Daten entstehen durch öffentliche Gelder</li>
+					<li>aus Daten abgeleitete Fakten sind ebenfalls frei</li>
+				</ul>
+			</article>				
+
+			<article class="fill">
+				<h1>Acht Regeln für Open Data</h1>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>
+					
+			<article class="fill">
+				<h1>#1 vollständig</h1>
+				<h3><span class="accent-color">(sofern vereinbar mit Datenschutz/Sicherheitsaspekten)</span></h3>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>
+										
+			<article class="fill">
+				<h1>#2 Primärdaten</h1>
+				<h3><span class="accent-color">Rohdaten!</span></h3>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>
+															
+			<article class="fill">
+				<h1>#3 zeitnah</h1>
+				<h3><span class="accent-color">möglichst unmittelbare Veröffentlichung</span></h3>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>
+					
+			<article class="fill">
+				<h1>#4 zugänglich</h1>
+				<h3><span class="accent-color">allgemein verfügbar</span></h3>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>
+										
+			<article class="fill">
+				<h1>#5 maschinenlesbar</h1>
+				<h3><span class="accent-color">maschinelle Weiterverarbeitung</span></h3>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>
+					
+			<article class="fill">
+				<h1>#6 diskriminierungsfrei</h1>
+				<h3><span class="accent-color">keine Hürden beim Zugriff (z.B. keine Registrierung)</span></h3>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>					
+					
+			<article class="fill">
+				<h1>#7 nicht-proprietär</h1>
+				<h3><span class="accent-color">offene, freie Formate</span></h3>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>
+					
+			<article class="fill">
+				<h1>#8 lizenzfrei</h1>
+				<h3><span class="accent-color">&#8623; Copyright, Patent-/Markenschutzrecht</span></h3>
+				<div class='source'>Quelle: <a href="https://public.resource.org/8_principles.html">https://public.resource.org/8_principles.html</a></div>
+			</article>
+
+			<article class="">
+				<h3>Schritte hin zur Veröffentlichung</h3>
+				<ol>
+					<li>Identifikation (interessanter) Daten</li>
+					<li>Auswahl und Absprache über die Daten</li>
+					<li>Vergabe einer Lizenz</li>
+					<li>Wahl geeigenter Formate</li>
+					<li>Bereitstellung der Daten</li>
+					<li>Auffindbarmachung der Daten</li>
+				</ol>
+			</article>	
+			
+			<article class="">
+				<h3>Beispiele für mögliche Daten</h3>
+				<ul>
+					<li>Geodaten</li>
+					<li>Daten über den öffentlichen Nahverkehr</li>
+					<li>Statistiken</li>
+					<li>Haushalts- und Finanzdaten</li>
+					<li>Forschungsdaten</li>
+					<li>evtl. auch privatwirtschaftliche Daten</li>
+				</ul>
+			</article>		
+			
+			<article class="">
+				<h3>Lizenz</h3>
+				<p><strong>So frei wie möglich!</strong></p>
+				<ul>
+					<li>möglichst keine Einschränkungen</li>
+					<li>insbesondere auch kommerzielle Nutzung erlauben</li>
+					<li>(nicht-restriktive) Creative Commons Lizenz</li>
+					<ul>
+						<li><code>cc-by</code></li>
+						<li><code>cc0</code></li>
+					</ul>
+					<li>Public Domain</li>
+					<li>Open Data Commons Open Database License (ODbL)</li>
+				</ul>
+			</article>							
+			
+			<article class="">
+				<h3>Formate</h3>
+				<p><strong>Möglichst vielfältig und offen!</strong><br/><br/>Beispiele:</p>
+				<ul>
+					<li>CSV > Excel > PDF > Papierform</li>
+					<li>XML/JSON (Einbindung in Web-Anwendungen)</li>
+					<li>domänenspezifische Formate (z.B. GTFS)</li>
+					<li>RDF</li>
+				</ul>
+			</article>							
+				
+			<article class="">
+				<h3>Veröffentlichung: Metadaten</h3>
+				<p><strong>Ebenso wichtig wie Daten selbst!</strong></p>
+				<ul>
+					<li>Erstellungsdatum, Datum der Veröffentlichung</li>
+					<li>Versionierung</li>
+					<li>fachliche und technische Ansprechpersonen</li>
+					<li>Informationen zu Lizenzen und Formaten</li>
+					<li>Klassifizierung, Schlagwörter</li>
+				</ul>
+			</article>	
+							
+			<article class="">
+				<h3>Veröffentlichung: Zugang</h3>
+				<p><strong>Keine Datensilos!</strong></p>
+				<ul>
+					<li>Datenkataloge</li>
+					<li>Unterstützung komplexer Suchen über Metadaten</li>
+					<li>maschineller Zugriff (APIs)</li>
+				</ul>
+			</article>	
+										
+			<article class="">
+				<h3>Tim Berners-Lee: "Linked Open Data"</h3>
+				<ol>
+					<li>URIs zur Idenifikation aller Objekte</li>
+					<li>HTTP-URIs für den Zugriff</li>
+					<li>Bereitstellung strukturierter, standardisierter Informationen (RDF/SPARQL)</li>
+					<li>Verlinkung verwandter Objekte</li>
+				</ol>
+					<div class='source'>Quelle: <a href="http://www.w3.org/DesignIssues/LinkedData.html">http://www.w3.org/DesignIssues/LinkedData.html</a></div>	
+				
+			</article>							
+
+			<article class="fill">
+				<h4>Linked Open Data</h4>
+				<img src="assets/images/lod.png" />
+				<div class='white source'>Bild: <a href="http://richard.cyganiak.de/2007/10/lod/">Richard Cyganiak</a> (cc-by-sa 3.0)</div>			
+			</article>							
+									
+			<article class="">
+				<h3>Linked Open Data: Bewertung für Daten</h3>
+				<table>
+					<tr>
+						<th width="30%" style="text-align:right">★</th>
+						<td>im Web verfügbar</td>
+					</tr>
+					<tr>
+						<th width="30%" style="text-align:right">★★</th>
+						<td>maschinenlesbares Format</td>
+					</tr>
+					<tr>
+						<th width="30%" style="text-align:right">★★★</th>
+						<td>nicht-propietäres Format</td>
+					</tr>
+					<tr>
+						<th width="30%" style="text-align:right">★★★★</th>
+						<td>Daten werden durch URIs identifiziert</td>
+					</tr>
+					<tr>
+						<th width="30%" style="text-align:right">★★★★★</th>
+						<td>Verlinkung anderer Daten und Kontexte über URIs</td>
+					</tr>
+				</table>
+				<div class='source'>Quelle: <a href="http://www.youtube.com/watch?v=ga1aSJXCFe0">Gov 2.0 Expo 2010: Tim Berners-Lee, "Open, Linked Data for a Global Community" </a></div>
+			</article>							
+									
+					
+			<article class="">
+				<h3>Offene Daten, und jetzt?</h3>
+				<p><strong>Entkopplung von Veröffentlichung &amp; Nutzung!</strong></p>
+				<ul>
+					<li>Datenjournalismus</li>
+					<li>Visualisierungen, interaktive Anwendungen</li>
+					<li>Kombination von Daten ("Mashups")</li>
+					<li>unvorhergesehene(!) Anwendungen</li>
+				</ul>
+			</article>	
+			
+										
+			<article class="">
+				<h3>Probleme in der Praxis</h3>
+				<ul>
+					<li>Daten werden nicht herausgegeben</li>
+					<li>Dateninhaber sehen keinen Mehrwert</li>
+					<li>"Verlustängste" (Deutungshoheit, Kontrolle)</li>
+					<li>heterogenes Umfeld: Sprache und Begriffe</li>
+					<li>unpassende Lizenzen und Formate</li>
+					<li>Datensilos</li>
+				</ul>
+			</article>	
+			
+
+		</section>
+  
+		<section>
+			<header>Open Data Initiativen</header>	
+			
+			<article class="fill">
+				<h1>Open Data Initiativen</h1>
+			</article>
+			
+			<article class="fill">
+				<h1>CKAN</h1>
+				<h3>Comprehensive Knowledge Archive Network</h3>
+				<div class="build">
+				<q style="font-size:145%; line-height:145%">apt-get für offene Daten</q>
+				</div>
+			</article>	
+			
+					
+			<article class="">
+				<h3>CKAN</h3>
+				<ul>
+					<li>webbasiertes Datenportal/Katalog</li>
+					<li>freie Software</li>
+					<li>Open Knowledge Foundation</li>
+					<li>unterstützt föderierte Setups</li>
+				</ul>
+			</article>							
+
+			<article class="fill">
+				<h1>data.gov</h1>
+				<h3>USA</h3>
+			</article>		
+			<article class="fill">
+				<iframe src='http://www.data.gov/metric'></iframe>
+			</article>	
+						
+			<article class="fill">
+				<h1>data.gov.uk</h1>
+				<h3>UK</h3>
+			</article>		
+			<article class="fill">
+				<iframe src='http://data.gov.uk/data'></iframe>
+			</article>	
+			
+			<article class="fill">
+				<h1>data.wien.gv.at</h1>
+				<h3>Wien</h3>
+			</article>	
+			<article class="fill">
+				<iframe src='http://data.wien.gv.at/'></iframe>
+			</article>	
+						
+			<article class="fill">
+				<h1>MOGDy</h1>
+				<h3>München</h3>
+			</article>		
+			<article class="fill">
+				<iframe src='http://www.muenchen.de/rathaus/Stadtverwaltung/Direktorium/IT-Beauftragte/MOGDy/Offene-Daten-der-LHM.html'></iframe>
+			</article>				
+
+						
+			<article class="fill">
+				<h1>daten.berlin.de</h1>
+				<h3>Berlin</h3>
+			</article>	
+			<article class="fill">
+				<iframe src='http://daten.berlin.de/datensaetze'></iframe>
+			</article>	
+			
+		</section>
+		
+		<section>
+			<header>Open Data Projekte in der Praxis</header>	
+			
+			<article class="fill">
+				<h1>Open Data Projekte</h1>
+				<h3>Beispiele</h3>
+			</article>
+			
+			<article class="fill">
+				<h1>openstreetmap.org</h1>
+			</article>
+			<article class="fill">
+				<iframe src='http://openstreetmap.de/karte.html?zoom=15&lat=48.40601&lon=9.99444&layers=B0000TF'></iframe>
+			</article>		
+								
+			<article class="fill">
+				<h1>bund.offenerhaushalt.de</h1>
+			</article>
+			<article class="fill">
+				<iframe src='http://bund.offenerhaushalt.de/'></iframe>
+			</article>	
+			
+			<article class="fill">
+				<h1>Daten-Mashup</h1>
+				<h3>Beispiel: Ausbruch des Eyjafjallajökull 2010</h3>
+			</article>
+			<article>
+				<h3>Airspace Rebooted (ItoWorld)</h2>
+				<iframe src="http://player.vimeo.com/video/11739091?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" width="640" height="480" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</article> 				
+					
+		</section>		
+  
+		<section>
+			<header>Open Data in Ulm</header>	
+			
+			<article class="fill">
+				<h1>Open Data in Ulm</h1>
+			</article>			
+			
+			<article class="fill">
+				<h1>Erste Projekte</h1>
+				<h3>Beispiele</h3>
+			</article>			
+			
+			<article class="">
+				<h3>Mensaplan Uni Ulm</h3>
+				<iframe src='http://www.uni-ulm.de/mensaplan/'></iframe>
+			</article>			
+
+			<article class="">
+				<h3>Abfahrtszeiten Haltestellen Uni-West &amp; Uni-Süd</h3>
+				<iframe src='http://bus.fs-et.de/'></iframe>
+			</article>			
+			
+			<article class="">
+				<h3>EBU Abfuhrtermine (@axurit)</h3>
+				<iframe src='http://www.mr-unseld.de/?q=node/194'></iframe>
+			</article>						
+			
+						
+			<article class="">
+				<h3>Die Anfänge</h3>
+				<ul>
+					<li>vereinzelte Projekte</li>
+					<li>pragmatische Einzellösungen</li>
+					<li>nicht organisiert</li>
+					<li>nicht zentralisiert</li>
+				</ul>
+				<div class="build">
+				<p class="box bg-mawi-color">
+				Frühjahr 2011: Erste Bestrebungen, Kräfte zu bündeln.
+				</p>
+				</div>
+			</article>		
+			
+			<article class="">
+				<h3>datalove@uni-ulm.de</h3>
+				<ul>
+					<li>vorerst Mailingliste zur Organisation</li>
+					<li>später Hochschulgruppe</li>
+					<li>erste Kontakte zur Stadt Ulm, SWU, EBU etc.</li>
+				</ul>
+			</article>		
+			
+			<article class="">
+				<h3>UlmAPI.de</h3>
+				<img style="text-align:right;float:right;"  src="assets/images/ulmapi.png" />
+				<ul>
+					<li class="med-color">Projekt der datalove HSG</li>
+					<li>Webseite</li>
+					<li>Wiki</li>
+					<li>Bereitstellung offener Daten</li>
+					<li>gezielt als Übergangslösung</li>
+				</ul>
+			</article>	
+							
+			<article class="">
+				<h3>UlmAPI.de – Technisches Setup</h3>
+				<ul>
+					<li>CouchDB-Instanz</li>
+					<li>Tabellen für Datensätze</li>
+					<li>HTTP-basierte API</li>
+					<li>Datensätze im JSON-Format</li>
+				</ul>
+			</article>		
+			
+			<article class="smaller fill">
+				<h3>UlmAPI.de – Beispiel PLZ Daten</h3>
+				<code>http://daten.ulmapi.de/plz/89231</code>
+<section class="build"><pre>{
+   "_id":"89231",
+   "_rev":"1-e0898aa6e3d5f8f5adcebad2564b5bb9",   
+   "type":"plz",
+   "license":{
+      "id":"pd",
+      "publishedDate":"2012-01-15",
+      "name":"Public Domain",
+      "link":"http://arnulf.us/PLZ#Copyright",
+      "author":"Arnulf Christl"
+   },
+   "ort":"Neu-Ulm",   
+   "geometry":{
+      "type":"Feature",
+      "properties":{
+         "PLZ99":"89231",
+         "PLZ99_N":89231,
+         "PLZORT99":"Neu-Ulm"
+      },
+      "geometry":{
+         "type":"Polygon",
+         "coordinates":[…]
+      }
+   }
+}</pre></section>
+			</article>		
+			
+			
+			<article class="fill">
+				<h1>daten.ulmapi.de</h1>
+				<h3>Ulmer Stadtteile und Stadtviertel</h3>
+			</article>
+			<article class="fill">
+				<iframe src='http://daten.ulmapi.de/geodaten/_design/map/index.html'></iframe>
+			</article>		
+
+			<article class="fill">
+				<h1>daten.ulmapi.de</h1>
+				<h3>Postleitzahlen Ulm/Neu-Ulm</h3>
+			</article>
+			<article class="fill">
+				<iframe src='http://daten.ulmapi.de/geodaten/_design/plz/index.html'></iframe>
+			</article>	
+			
+			<article class="fill">
+				<h1>daten.ulmapi.de</h1>
+				<h3>Haltestellen der SWU</h3>
+			</article>
+<!--
+			<article class="fill">
+				<iframe src='http://daten.ulmapi.de/geodaten/_design/haltestellen/index.html'></iframe>
+			</article>				
+-->			
+			
+			<article class="fill">
+				<h1>mapnificent.net</h1>
+				<h3>(work in progress)</h3>
+			</article>
+			<article class="fill">
+				<iframe src='http://www.mapnificent.net/ulm/'></iframe>
+			</article>	
+			
+						
+			<article class="fill">
+				<h1>LiveMap Ulm</h1>
+				<h3>(node knockout)</h3>
+			</article>
+			<article class="fill">
+				<iframe src='http://ulmapi-de.no.de/map'></iframe>
+			</article>	
+			
+			
+			<article class="">
+				<h3>Aktuelle Projekte: Datenakquise</h3>
+				<ul>
+					<li>weitere Daten der Stadt Ulm (Haushaltsdaten)</li>
+					<li>SWU: Fahrplandaten</li>
+					<li>EBU: Daten zur Müllentsorgung</li>
+					<li>???</li>
+				</ul>
+			</article>				
+			
+			
+			<article class="">
+				<h3>Aktuelle Projekte: OpenCityCamp Ulm 2012</h3>
+				<ul>
+					<li>12./13. Mai 2012, Uni Ulm</li>
+					<li>BarCamp-ähnliches Event</li>
+					<li>Vorträge, Workshops, Hacking</li>
+					<li>gemischtes Publikum(!)</li>
+					<li>Kick-off für neue Projekte</li>
+				</ul>
+			</article>				
+
+		</section>
+
+		<section>		
+
+			<article class="">
+				<h3>Interesse?</h3>
+				<p><strong><a href="">UlmAPI.de</a> / datalove@uni-ulm.de</strong><br/>
+
+				<em>datalove ♥ – Open Data HSG, Uni Ulm</em></p>
+				
+				<p><strong><a href="">OpenCityCamp Ulm 2012</a></strong><br/>
+				<em>BarCamp-ähnliches Event 12./13. Mai 2012 (Uni Ulm)</em></p>
+				<p>Wir suchen noch Teilnehmer und insbesondere Helfer!</p>
+				<p>occ-ulm.mixxt.de</p>
+			</article>					
+						
+			<article class="">
+				<h3>License</h3>
+				<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+			</article>
+			
+<article class="fill">
+				<h3>"The Principles of Datalove"</h3>			
+<q style="font-size:95%; line-height:145%;margin-top:20px;margin-left:40px;width:100%">
+Love data<br/>
+Data is essential<br/>
+
+Data must flow<br/>
+
+Data must be used<br/>
+
+Data is neither good nor bad<br/>
+
+There is no illegal data<br/>
+
+Data is free<br/>
+
+Data can not be owned<br/>
+
+No man, machine or system shall interrupt the flow of data<br/>
+
+Locking data is a crime against datanity<br/>
+Love data</q>
+<div class='source'>Quelle: <a href="http://datalove.me/">http://datalove.me/</a></div>			
+			</article>							
+
+			<article class="fill">
+				<h1>Dankeschön!</h1>
+				<h1>Fragen?</h1>
+			</article>				
+			
+		</section>
+		
+
+		<section>					
+			<article>
+				<h3>Inahlt</h3>
+				<nav class="toc" />
+			</article>
+		</section>		
+		
+	</div>
+
+</body>
+</html>
